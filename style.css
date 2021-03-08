@@ -239,14 +239,14 @@ section {
   transition: 0.4s ease-in-out;
   cursor: pointer;
   padding: 5px 12px;
-  /* border: 1px solid rgba(96, 167, 96, 0); */
+  border: 1px solid rgba(177, 201, 177, 0.5);
 }
 
 .item-wrap:hover {
   border-radius: 2rem;
   box-shadow: rgba(14, 30, 37, 0.1) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.22) 0px 2px 16px 0px;
-  /* border: 1px solid rgb(96, 167, 96); */
+  border: 1px solid rgba(96, 167, 96, 0.34);
   padding: 0.4rem;
 }
 
@@ -267,9 +267,69 @@ section {
   border-radius: 2rem;
 }
 
-.img-hoder:hover {
+.img-holder:hover {
   transform: scale(2) rotate(45deg);
 }
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.item-info h3 {
+  color: var(--grey);
+}
+
+.item-info > div:first-child {
+  text-align: left;
+}
+
+.review-wrap {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.review-wrap.active {
+  transform: scale(1.2) !important;
+}
+
+.review-content {
+  padding: 3rem;
+  border-bottom: 0.124rem solid var(--grey);
+  position: relative;
+  text-align: center;
+}
+
+.review-img {
+  position: absolute;
+  left: 56%;
+  transform: translateX(-50%);
+  bottom: -2.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+.review-info {
+  padding: 3rem;
+  text-align: center;
+}
+
+.rating {
+  margin-top: 2rem;
+}
+
+.rating i {
+  color: var(--primary-color);
+}
+
+/*-----------------------------------------------*/
 /* GRID SYSTEM */
 
 /*  Extra small devices (phones, 00px and down)  */
