@@ -1,9 +1,13 @@
 :root {
   --primary-color: #0f9d58;
   --background-color: #f0f3f7;
-  --secon-color: #9da2ad;
+  --second-color: #9da2ad;
   --grey: #7a7a7b;
   --white: #ffffff;
+  --shaddow-inset: rgba(60, 77, 85, 0.1) 0px 2px 4px 0px,
+    rgba(54, 72, 80, 0.12) 0px 2px 16px 0px inset;
+  --box-shadow: rgba(14, 30, 37, 0.1) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.22) 0px 2px 16px 0px;
 }
 
 * {
@@ -239,14 +243,14 @@ section {
   transition: 0.4s ease-in-out;
   cursor: pointer;
   padding: 5px 12px;
-  border: 1px solid rgba(177, 201, 177, 0.5);
+  border: 1px solid rgba(209, 221, 209, 0.5);
+  box-shadow: var(--shaddow-inset);
 }
 
 .item-wrap:hover {
   border-radius: 2rem;
-  box-shadow: rgba(14, 30, 37, 0.1) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.22) 0px 2px 16px 0px;
-  border: 1px solid rgba(96, 167, 96, 0.34);
+  box-shadow: var(--box-shadow);
+  border: 1.3px solid rgba(122, 185, 122, 0.34);
   padding: 0.4rem;
 }
 
@@ -301,14 +305,14 @@ section {
 
 .review-content {
   padding: 3rem;
-  border-bottom: 0.124rem solid var(--grey);
+  border-bottom: 0.2rem solid var(--grey);
   position: relative;
   text-align: center;
 }
 
 .review-img {
   position: absolute;
-  left: 56%;
+  left: 50%;
   transform: translateX(-50%);
   bottom: -2.5rem;
   width: 5rem;
@@ -325,8 +329,8 @@ section {
   margin-top: 2rem;
 }
 
-.rating i {
-  color: var(--primary-color);
+.rating img {
+  background-color: var(--primary-color);
 }
 
 /*-----------------------------------------------*/
