@@ -383,6 +383,7 @@ section {
   padding: .5rem; 
   display: none;
 }
+
 .back-to-top img {
   background-color: var(--primary-color);
   border-radius: 4px;
