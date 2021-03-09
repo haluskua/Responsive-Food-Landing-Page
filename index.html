@@ -104,10 +104,11 @@
         <h1>What will <span class="primary-color">you</span> eat today?</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti et natus corrupti accusantium dolores laboriosam?</p>
         <div class="food-category">
-          <button class="active">All food</button> <button>Salad</button> <button>Lorem</button> <button>Ipsum</button> <button>Dolar</button>
+          <button class="active"
+               data-food-type="all">All food</button> <button data-food-type="salad">Salad</button> <button data-food-type="lorem">Lorem</button> <button data-food-type="ipsum">Ipsum</button> <button data-food-type="dolor">Dolor</button>
         </div>
-        <div class="food-item-wrap">
-          <div class="food-item">
+        <div class="food-item-wrap all">
+          <div class="food-item salad-type">
             <div class="item-wrap">
               <div class="item-img">
                 <div class="img-holder bg-img"
@@ -122,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="food-item">
+          <div class="food-item lorem-type">
             <div class="item-wrap">
               <div class="item-img">
                 <div class="img-holder bg-img"
@@ -137,7 +138,7 @@
               </div>
             </div>
           </div>
-          <div class="food-item">
+          <div class="food-item ipsum-type">
             <div class="item-wrap">
               <div class="item-img">
                 <div class="img-holder bg-img"
@@ -152,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div class="food-item">
+          <div class="food-item dolor-type">
             <div class="item-wrap">
               <div class="item-img">
                 <div class="img-holder bg-img"
