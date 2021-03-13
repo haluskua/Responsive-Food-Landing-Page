@@ -174,8 +174,10 @@ section {
   background-color: var(--white);
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
-  transform: translateX(-10rem);
 }
+
+
+
 .about-slogan h3 {
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -415,8 +417,7 @@ section {
   display: block;
 }
 
-
-/*  ANIMATION  */
+/* ANIMATION */
 
 .left-to-right {
   transform: translateX(-150%);
@@ -426,6 +427,59 @@ section {
 .left-to-right.start {
   transform: translateX(0);
 }
+
+.right-to-left {
+  transform: translateX(150%);
+  transition: 1s ease-in-out;
+}
+
+.right-to-left.start {
+  transform: translateX(0);
+}
+
+.zoom {
+  transform: scale(0);
+  transition: .6s ease-in-out;
+}
+
+.zoom.start {
+  transform: unset;
+}
+
+.bottom-up {
+  transform: translateY(30%);
+  transition: .8s ease-in-out;
+}
+
+.bottom-up.start {
+  transform: translateY(0);
+}
+
+.delay-2 {
+  transition-delay: .2s;
+}
+
+.delay-4 {
+  transition-delay: .4s;
+}
+
+.delay-6 {
+  transition-delay: .6s;
+}
+
+.delay-8 {
+  transition-delay: .8s;
+}
+
+.delay-10 {
+  transition-delay: .10s;
+}
+
+.delay-12 {
+  transition-delay: .12s;
+}
+
+
 
 
 
@@ -546,4 +600,9 @@ section {
 
 .mb-nav {
   display: none;
+}
+
+
+.about-slogan-start {
+  transform: translateX(-10rem) !important;
 }
