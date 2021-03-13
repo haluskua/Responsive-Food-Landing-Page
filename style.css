@@ -416,6 +416,19 @@ section {
 }
 
 
+/*  ANIMATION  */
+
+.left-to-right {
+  transform: translateX(-150%);
+  transition: 1s ease-in-out;
+}
+
+.left-to-right.start {
+  transform: translateX(0);
+}
+
+
+
 /*-----------------------------------------------*/
 /* GRID SYSTEM */
 
