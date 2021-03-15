@@ -574,6 +574,7 @@ section {
     color: white;
     padding: 4px 1rem;
     mix-blend-mode: difference;
+    text-align: left !important;
   }
 
   .cart-btn i {
