@@ -245,8 +245,8 @@ section {
   transition: 0.4s ease-in-out;
   cursor: pointer;
   padding: 5px 12px;
-  border: 1px solid rgba(209, 221, 209, 0.5);
-  box-shadow: var(--shaddow-inset);
+  border: 1px solid rgba(209, 221, 209, 0.12);
+  /* box-shadow: var(--shaddow-inset); */
 }
 
 .item-wrap:hover {
@@ -301,7 +301,7 @@ section {
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
-.review-wrap.active {
+.review-wrap.active.start {
   transform: scale(1.2) !important;
 }
 
